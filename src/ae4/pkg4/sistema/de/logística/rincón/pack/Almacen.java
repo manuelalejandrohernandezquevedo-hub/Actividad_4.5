@@ -11,15 +11,18 @@ import java.util.HashMap;
  *
  * @author manuel alejandro
  */
-public class Almacen extends Paquete {
-    // Creamos la estructura de 3 filas y 3 columnas
-    Paquete[][] Almacen = new Paquete[3][3];
-    HashSet<String> codgPaquetes = new HashSet<>();
-    ArrayList<String> Paquete = new ArrayList<>();
-    HashMap<String, Integer> ciudad = new HashMap<>();
+public class Almacen {
+    // Creamos solo las estructuras de datos
+    private Paquete[][] muelleFisico;
+    private HashSet<String> registroSeguridad;
+    private ArrayList<String> colaSalida;
+    private HashMap<String, Integer> estadisticas;
 
-    public Almacen(String codigo, double peso, String destino) {
-        super(codigo, peso, destino);
+    public Almacen() {
+        this.muelleFisico = new Paquete [3][3];
+        this.registroSeguridad = new HashSet<>();
+        this.colaSalida = new ArrayList <>();
+        this.estadisticas = new HashMap <>() ;
     }
     
     public void recepcionarPaquete(Paquete p, int fila, int col) {

@@ -14,7 +14,7 @@ public class AE44SistemaDeLogísticaRincónPack {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Paquete paquete = new Paquete ("COD-01", 3, "Madrid");
     }
     
 }
